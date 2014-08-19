@@ -1,0 +1,15 @@
+.upload_form {
+	width: 40%;
+	height: 600px;
+
+	background-color: #E8E6EB;
+
+	margin: 20px auto 20px auto;
+
+	border-radius: 5px;
+}
+
+
+textarea {
+	width: 100%;
+}

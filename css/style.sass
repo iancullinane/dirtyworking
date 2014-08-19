@@ -1,0 +1,651 @@
+/*CSS IMPORT?*/
+/*************/
+
+/* IMPORT RESET */
+@import url("reset.css");
+
+/* IMPORT 12 COLUMN RESPONSIVE GS */
+@import url("responsive.gs.12col.css");
+
+
+
+
+/*FONT IMPORT*/
+/*************/
+
+@font-face {
+  font-family: edmondsansMedium;
+  src: url('../fonts/Edmondsans-Medium.otf');
+}
+
+@font-face {
+  font-family: gillLight;
+  src: url('../fonts/GillSansMTPro-Light.otf');
+}
+
+@font-face {
+  font-family: console;
+  src: url('../fonts/Inconsolata.otf');
+}
+
+@font-face {
+  font-family: lav;
+  src: url('../fonts/lavenderia.otf');
+}
+
+@font-face {
+  font-family: cubano;
+  src: url('../fonts/Cubano-Regular.otf');
+}
+
+
+
+
+
+
+/*******************************global css properties********************************/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: gillLight;
+  font-weight: normal;
+  /*padding: 0px;*/
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+body {
+	margin: 0 0 0 0;
+	padding: 0px;
+}
+
+
+
+a:link {color:black;}      /* unvisited link */
+a:visited {color:white;}  /* visited link */
+a:hover {color:white;}  /* mouse over link */
+a:active {color:white;}  /* selected link */
+
+
+
+
+
+.indielink:link {color:red;}      
+.indielink:visited {color:black;}  
+.indielink:hover {color:#fe57a1;}  
+.indielink:active {color:#fe57a1;}  
+
+
+
+.container {
+	background-color: white;
+	
+}
+
+/*.block {
+	height: 100px;
+	background-color: white;
+	
+}*/
+
+.wrapper {
+	/*margin: 5px auto 5px auto;*/
+	width: 90%;
+	margin: auto;
+
+}
+
+
+/********************END GLOBALS****************************/
+
+
+/**********************NAV**********************************/
+
+
+.top {
+	position: fixed;
+	margin: auto;
+	width: 100%;
+	background-color: black;
+	height: 80px;
+}
+
+
+
+.navigation {
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	background-color: black;
+}
+
+
+
+.brand {
+	height: 80px;
+	
+	padding: 5px;
+	margin: auto;
+	background-color: black;
+	position: absolute;
+}
+
+
+
+.main-menu {
+	height: 80px;
+	padding: 5px;
+	/*background-color: black;*/
+	float: right;
+	vertical-align: center;
+}
+
+.main-menu ul {
+	
+	/*display: inline;*/
+
+}
+
+.main-menu ul li {
+	color: white;
+	float: right;
+	font-family: cubano;
+	font-size: 1.5em;
+	text-align: center;
+	margin-left: 25px;
+	vertical-align: center;
+	
+}
+
+
+
+/**********************END NAV**********************************/
+
+
+
+
+
+/**********************MAIN**********************************/
+
+.header {
+	width: 100%;
+	z-index: 10;
+	margin-top: 50px;
+	/*background-image: url('../images/jane.jpg');*/
+	/*margin: auto;*/
+
+	background: url('../images/soaps/cupcake_tray2_web.jpg') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.announce {
+	font-family: cubano;
+	font-size: 5em;
+	padding: 0;
+	margin: 0;
+	margin-left: 20px;
+	margin-top: 450px;
+	color: #fe57a1;
+	text-shadow: 2px 2px 1px black;
+
+}
+
+
+.shout {
+	padding: 5px;
+	/*line-height: 50px;*/
+	background-color: black;
+	color: white;
+
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: cubano;
+	vertical-align: center;
+	font-size: 2em;
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+	.header {
+		height: 200px;
+		-webkit-background-size: 100%;
+    	-moz-background-size: 100%;
+    	-o-background-size: 100%;
+    	background-size: 100%;
+	}
+	.announce {
+		font-size: 2em;
+		margin-top: 150px;
+		
+	}
+	.shout{font-size: .8em}
+
+	.like_img {
+	padding: 10px;
+	width: 25%;
+	height: 25%;
+	display: inline-block;
+	float: left;
+	}
+}
+
+.showcase {
+	font-family: cubano;
+	color: #fe57a1;
+	font-size: 4em;
+	text-align: left;
+}
+
+
+
+
+.banner {
+	background-color: #7A7A7A;
+
+}
+
+
+
+
+
+
+.left_content {
+	padding: 5px 10px 5px 0;
+	background-color: #749275;
+	height: 500px;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.right_content {
+	
+	width: 100%;
+	display: block;
+	float: right;
+	
+	margin-bottom: 10px;
+}
+
+.shop {
+	padding: 5px 10px 5px 10px;
+	background-color: black;
+	color: white;
+	font-family: cubano;
+	font-size: 2em;
+}
+
+.like {
+	background-color: #3B5998;
+	display: block;
+	color: white;
+}
+
+.like_img {
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.like_text {
+
+}
+
+.right-content > a {
+  text-decoration: none;
+  color: #fe57a1;
+  
+}
+
+
+/*a:hover, a:focus {
+  color: #fe57a1;
+}
+*/
+
+/**********************END MAIN**********************************/
+
+
+
+
+/**********************FOOTER**********************************/
+
+
+
+footer {
+	display: block;
+	height: 50px;
+	background-color: #3d3d3d;
+}
+
+.legal {
+	font-size: .8em;
+	color: gray;
+	font-family: gillLight;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/**********************POSTS**********************************/
+
+.post {
+	margin-top: 0;
+	/*padding-top: 5px;*/
+	width: 100%;
+	margin-bottom: 5px;
+	display: inline-block;
+	border-bottom: 1px black dashed;
+	padding-bottom: 8px;
+}
+
+.post_img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.post_right {
+	display: inline-block;
+	float: right;
+}
+
+
+.post_title {
+	padding: 5px;
+	color: white;
+	font-family: cubano;
+	line-height: 25px;
+	background-color: black;
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 1.7em;
+}
+
+.post_content{
+	font-family: gillLight;
+	margin-top: 0;
+	margin-bottom: 5px;
+	float: right;
+}
+
+
+
+
+.insta{
+	width: 100%;
+	float: right;
+	background-color: blue;
+	height: 100px;
+}
+
+
+
+.intro_img.img {
+	width: 100%;
+}
+
+
+
+
+.main {
+	display: block;
+	float: left;
+}
+
+.right {
+	display: block;
+	float: right;
+}
+
+
+
+
+/**************************INTRO SECTION********************************/
+
+.intro {
+	
+	width: 100%;
+	display: block;
+	float: left;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	border-bottom: 1px dashed black;
+	
+}
+
+.intro_img{
+	display: inline-block;
+	float: left;
+}
+
+.intro_right {
+	width: 100%;
+	display: inline-block;
+	float: left;
+}
+
+
+.intro_title {
+	padding: 3px;
+	color: white;
+	font-family: cubano;
+	line-height: 25px;
+	background-color: black;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.intro_header{
+	font-family: gillLight;
+	width: 100%;
+	text-align: left;
+	font-size: 3em;
+
+}
+
+.intro_content{
+	font-family: gillLight;
+	width: 100%;
+	text-align: left;
+	font-size: 1.5em;	
+}
+
+
+
+.soon {
+	font-size: 10em;
+	font-family: cubano;
+	text-align: center;
+}
+
+
+
+
+/***********************PHONE FORMATTING********************************/
+
+.hello {
+	margin-top: 85px;
+	font-family: cubano;
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.about_img {
+	display: inline-block;
+	float: left;
+}
+
+.about_text {
+	display: inline-block;
+	float: right;
+	
+}
+
+.about_titles {
+	font-family: cubano;
+	font-size: 1.4em;
+	margin-top: 0;
+}
+
+.about_me {
+	margin-bottom: 25px;
+}
+
+
+
+
+/***********************SOAPS BEGIN********************************/
+
+.soaps {
+	margin-top: 100px;
+}
+
+
+
+
+/***********************SOAPS END********************************/
+
+
+
+/***********************SLIDER FORMATTING********************************/
+
+
+
+#slider {
+	
+	margin: 80px auto 0 auto;
+	width: 80%;
+}
+
+.rslides {
+	margin: 0 auto 0 auto;
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+  	height: 500px;
+ 	padding: 0;
+ 	z-index: 1;
+}
+
+.rslides li img {
+	width: 100%;
+}
+
+
+
+/*#slider {
+	margin-top: 500px;
+}
+
+
+.rslides {
+  margin: 0 auto 0 auto;
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 90%;
+  height: 500px;
+  padding: 0;
+  
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.rslides ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}*/
+
+
+
+
+
+
+/***********************SOAPS FORMATTING*******************************/
+
+
+.soaps {
+	width: 32%;
+}
+
+
+/***********************END SOAPS FORMATTING*******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************SLIDER FORMATTING*******************************/
+
+
+
+/***********************PHONE FORMATTING********************************/
+
+@media only screen and (max-device-width: 480px) {
+	.header {margin-top: 50px;}
+
+	.shout{font-size: .8em}
+}

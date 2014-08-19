@@ -1,0 +1,5 @@
+<?
+
+function db_conn(){
+	
+}

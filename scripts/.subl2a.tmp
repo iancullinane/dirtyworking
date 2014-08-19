@@ -1,0 +1,47 @@
+$(document).ready(function() {
+
+	/*JQuery for fade in highlighting of links*/
+	$(".link").hover(function() {
+		$(this).animate({ color:'#fe57a1'}, 100);
+	}, function() {
+		$(this).animate({ color: '#fff'}, 300);
+	});
+
+
+
+	var on = true;
+	var myVar = setInterval(function(){ 
+		if(on) {slides()}on=true;},3000);
+
+	document.getElementByClassName("prev").addEventListener("click",function(){
+		back_slide(true); 
+	});
+	document.getElementByClassName("next").addEventListener("click",function(){
+		slides(true); 
+	});
+
+
+
+
+
+	function slides(i) {
+		document.getElementsByClassName("slideImage")[1].style.width="0px";
+		document.getElementsByClassName("slideImage")[2].style.width="100%";
+		var slide = document.getElementsByClassName("slideImage")[0];
+		document.getElementById("slide").appendChild(slide);
+		if(i) {
+			on = false; 
+		}
+	}
+
+	function back_slide(i) {
+		document.getElementsByClassName("slideImage")[1].style.width="0px";
+		document.getElementsByClassName("slideImage")[0].style.width="100%";
+		var slide = document.getElementsByClassName("slideImage")[3];
+		var slide2 = document.getElementsByClassName("slideImage")[0];
+		document.getElementById("slide").insertBefore(slide,slide2);
+		if(i) {
+			on = false; 
+		}
+	}
+});
